@@ -36,7 +36,7 @@ export default function Home() {
     }}>
         <Panel>
             <Title head={1} style="h1Title" text="RESULTADO LOTOFÁCIL" />
-            <Title head={5} style="h5Title" text="Sorteio do dia DATA" />
+            <Title head={5} style="h5Title" text="Sorteio realizado hoje" />
             <Div style="boxDisplay">
                 {showNumbers()}
             </Div>
