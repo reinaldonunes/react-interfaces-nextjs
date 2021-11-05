@@ -1,5 +1,7 @@
 export default function FieldInput(props){
 
+    let typeField = props.type ? "password" : "text"
+
     const styleField = {
         border: "0px",
         borderBottom: "2px solid #40407a",
@@ -14,6 +16,6 @@ export default function FieldInput(props){
     }
 
     return(
-       <input type="text" placeholder={props.label} style={styleField} />
+       <input onChange={e => props.valorCampo(e)} type={typeField} placeholder={props.label} style={styleField} />
     )
 }
